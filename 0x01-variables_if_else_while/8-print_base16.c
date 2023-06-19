@@ -5,15 +5,16 @@
  * Return: 0
  */
 int main(void)
-{
-	int d = 48;
+ {
+     int n;
+     int a;
 
-	while (d <= 102)
-	{
-		if (d == 57)
-			d += 39;
-		++d;
-	}
-	putchar('\n');
-	return (0);
-}
+     for (n =48; n <= 57; n++){
+	     putchar(n);
+     }
+     for (a =97; a <=102; a++){
+	     putchar(a);
+     }
+     putchar('\n');
+     return (0);
+ }
