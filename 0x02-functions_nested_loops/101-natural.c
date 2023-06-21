@@ -1,0 +1,23 @@
+#include <studio.h>
+
+/** main - Print the sum of all multiples of 3 or 5 up to 102
+ * Return: 0
+ */
+
+int main(void)
+{
+	int a, b = 0;
+
+	while (a < 1024)
+	{
+		if ((a % 3 == 0) || (a % 5 == 0))
+		{
+			b += a;
+		}
+
+		a++;
+	}
+
+	printf("%\n", b);
+	return (0);
+}
