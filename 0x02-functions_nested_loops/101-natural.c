@@ -1,6 +1,7 @@
-#include <studio.h>
+#include <stdio.h>
 
-/** main - Print the sum of all multiples of 3 or 5 up to 102
+/**
+ * main - Print the sum of all multiples of 3 or 5 up to 102
  * Return: 0
  */
 
@@ -18,6 +19,6 @@ int main(void)
 		a++;
 	}
 
-	printf("%\n", b);
+	printf("%d\n", b);
 	return (0);
 }
