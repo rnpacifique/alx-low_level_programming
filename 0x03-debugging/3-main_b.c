@@ -13,7 +13,7 @@ int main(void)
     int day;
     int year;
 
-    month = 2;
+    month = 4;
     day = 29;
     year = 2000;
 
@@ -25,4 +25,3 @@ int main(void)
 
     return (0);
 }
-
