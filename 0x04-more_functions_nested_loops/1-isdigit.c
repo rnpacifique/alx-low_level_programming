@@ -3,7 +3,7 @@
 /**
  * _isdigit - Check if letter is a digit
  * @c: print int
- * Return: 0
+ * Return: 0 if false, if true
  */
 
 int _isdigit(int c)
