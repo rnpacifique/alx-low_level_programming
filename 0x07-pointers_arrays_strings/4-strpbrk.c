@@ -1,29 +1,28 @@
 #include "main.h"
 
 /**
- * _strpbrk -  locates a substring.
- * @haystack: sring to be examined
- * @needle: substring in haystack
- * Return: 0
+ * _strpbrk - searches a string for any of a set of bytes
+ * @s: string
+ * @accept: string
+ * Return:  pointer to the byte in s that matches one of the bytes in accept
  */
 
-char *_strstr(char *haystack, char *needle)
+char *_strpbrk(char *s, char *accept)
 {
-	char *string1, *string2;
+	int a;
 
-	while (*haystack != '\0')
+	while (*s != '\0')
 	{
-		string1 = hystack;
-		string2 = needle;
-		
-		while (*hystack != '\0' && *string2 != '\0' && *hystack == *string2)
+		a = 0;
+		while (accept[a] != '\0')
 		{
-			hystack++;
-			string2++;
+			if (*s == accept[a])
+			{
+				return (s);
+			}
+			a++;
 		}
-		if (string2 == '\0')
-			return (string1);
-		haystack = string1 + 1;
+		s++;
 	}
 	return (0);
 }
