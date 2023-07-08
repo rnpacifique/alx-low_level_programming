@@ -14,7 +14,7 @@ int is_prime_number(int n)
 	return (evaluate_prime(n, n - 1));
 }
 /**
- * evaluate_prime_number - recursion loop
+ * evaluate_prime - recursion loop
  * @n: number to evaluate
  * @i: iterator
  * Return: return 1 if number is prime, 0 if not
