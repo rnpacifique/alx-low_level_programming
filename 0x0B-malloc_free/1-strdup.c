@@ -12,12 +12,12 @@
 char *_strdup(char *str)
 {
 	char *copy;
-	unsigned int i, length = 0;
+	unsigned int i, long = 0;
 
 	for (i = 0; str[i]; i++)
-		length++;
+		long++;
 
-	copy = malloc((length + 1) * sizeof(char));
+	copy = malloc((long + 1) * sizeof(char));
 
 		if (copy == NULL)
 			return (NULL);
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	for (i = 0; str[i]; i++)
 		copy[i] = str[i];
 
-	copy[length] = '\0';
+	copy[long] = '\0';
 	return (copy);
 }
 
