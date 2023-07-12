@@ -5,15 +5,17 @@
  * free_grid - frees a 2 dimensional grid
  * @grid: 2 dimensional grid to be freed
  * @height: height of grid
- * Return: void
+ * Return: free grid
  */
 
 void free_grid(int **grid, int height)
 {
-	int i;
+	int a;
 
-	for (i = 0; i < height; i++)
-		free(grid[i]);
+	for (a = 0; a < height; a++)
+	{
+		free(grid[a]);
+	}
 
 	free(grid);
 }
