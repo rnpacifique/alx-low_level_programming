@@ -20,11 +20,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (s1[length_1] == '\0')
+	while (s1[length_1] != '\0')
 	{
 		length_1++;
 	}
-	while (s2[length_2] == '\0')
+	while (s2[length_2] != '\0')
 	{
 		length_2++;
 	}
