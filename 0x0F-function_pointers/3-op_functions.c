@@ -26,7 +26,7 @@ int op_add(int a, int b)
  * Return: difference
  */
 
-int op_sum(int a, int b)
+int op_sub(int a, int b)
 {
         return (a - b);
 }
