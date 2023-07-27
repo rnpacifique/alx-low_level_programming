@@ -11,14 +11,22 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t nelem = 0;
+	size_t nod = 0;
 
-	while (h)
+	while (h != NULL)
 	{
-	       	h = h->next;
-	       nelem++;
+		if (h->str == NULL)
+		{
+			printf("[%d] %s\n", 0, "(nil)");
+		}
+		else
+		{
+			printf("[%d] %s\n", h->len, h->str);
+		}
+		h = h->next;
+		nod++;
 	}
-	return (nelem);
+	return (nod);
 }
 
 
